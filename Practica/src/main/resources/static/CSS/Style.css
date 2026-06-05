@@ -1,0 +1,86 @@
+*{
+    color:#333333;
+    font-family: Candara, Arial, Calibri, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+#formacion{
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+#Sobre\ mi,#habilidades,#formacion{
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 4px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+.tabla{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+
+}
+
+.tabla th{
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #0056b3;
+    color: white;
+}
+
+.tabla td{
+    border: 1px solid #cccccc;
+    padding: 12px;
+    text-align: left;
+}
+
+.destacado{
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 4px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+#contacto{
+    background-color: rgb(121 121 121 / 0.47);
+    color: white;
+    border: 1px solid #dddddd;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 4px rgba(0,0,0,0.2);
+    font-weight: bold;
+}
+
+nav{
+    margin: 10px 20px 10px 20px;
+}
+nav a{
+    text-decoration: none;
+    margin: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    background-color: #0056b3;
+    color: white;
+    padding: 7px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+header{
+    text-align: center;
+    background-color: rgb(112 112 112 / 0.32);
+    padding: 10px;
+}
