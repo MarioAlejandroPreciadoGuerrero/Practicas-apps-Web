@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nébula Music - Iniciar Sesión</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+
+<main class="auth-container">
+    <section class="auth-card">
+        <form method="post" action="/autentication" enctype="application/x-www-form-urlencoded">
+            <h1>Iniciar sesión</h1>
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required minlength="5"
+                       maxlength="100"
+                       pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$">
+            </div>
+
+            <div class="field">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="********" required minlength="8"
+                pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)\S{8,}$">
+            </div>
+
+            <div class="button">
+                <button type="submit">Iniciar Sesión</button>
+                <button type="reset">Limpiar</button>
+            </div>
+            <a href="registro.html"><p>Ya tienes una cuenta?</p></a>
+        </form>
+
+    </section>
+</main>
+
+<footer>
+    <p>Copyright Nébula 2025.</p>
+</footer>
+
+</body>
+</html>
