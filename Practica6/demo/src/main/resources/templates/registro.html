@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nébula Music - Registro</title>
+    <link rel="stylesheet" href="../static/styles/styles.css">
+</head>
+<body>
+
+<main class="auth-container">
+    <section class="auth-card">
+
+        <!-- TAREA PARA EL ALUMNO:
+             Crea un formulario que envíe los datos mediante POST a "/crear-cuenta".
+             Debe contener campos para:
+             - Nombre completo (texto)
+             - Correo electrónico (email)
+             - Contraseña (password)
+             - Pseudónimo (texto con patrón de validación: [letras de 3 a 10]-[números de 2 a 10])
+             - Género (radio buttons: Femenino, Masculino, Otro)
+             - Tipo de Suscripción (select: Gratis, Premium Mensual, Premium Anual)
+             - Fecha de nacimiento (date)
+             - Aceptar términos y condiciones (checkbox)
+             - Comentarios adicionales o gustos (textarea)
+        -->
+        <form class="auth-form" method="post" action="/crear-cuenta" enctype="application/x-www-form-urlencoded">
+            <h2>Crear cuenta</h2>
+            <div class="field">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Nombre completo" minlength="10" maxlength="35"
+                       required>
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="correoE@gmail.con" minlength="10"
+                       maxlength="35" required
+                       pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$">
+            </div>
+
+            <div class="field">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" placeholder="*******" minlength="8" maxlength="35"
+                       required pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)\S{8,}$">
+            </div>
+
+            <div class="field">
+                <label for="txt_nickName"></label>
+                <input type="text" id="txt_nickName" name="txt_nickName" placeholder="Nombre de usuario" minlength="5" maxlength="35" required}
+                pattern="^[a-zA-Z0-9]*$">
+            </div>
+
+            <div class="button">
+                <label>Genero</label>
+                <div>
+                    <input type="radio" id="rad_femenino" name="rad_genero" value="femenino" required>
+                    <label for="rad_femenino">Femenino</label>
+                    <input type="radio" id="rad_masculino" name="rad_genero" value="masculino">
+                    <label for="rad_masculino">Masculino</label>
+                    <input type="radio" id="rad_otro" name="rad_genero" value="otro">
+                    <label for="rad_otro">Otro</label>
+                </div>
+            </div>
+
+            <div class="comboBox">
+                <label for="sel_suscription">Tipo suscripción</label>
+                <select id="sel_suscription" name="sel_suscription" required>
+                    <option value="">--selecciona una opcion--</option>
+                    <option value="Gratis">Gratis</option>
+                    <option value="premium_mensual">premium menusual ($99/mes</option>
+                    <option value="premium_anual">premium anual ($899/mes</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="Bth">Fecha nacimiento</label>
+                <input type="date" id="Bth" name="Birth_day" required>
+            </div>
+
+            <div class="txtArea">
+                <label for="coments">Comentarios</label>
+                <textarea name="coments" id="coments" cols="30" rows="10" placeholder="Cuentanos que musica te gusta"></textarea>
+            </div>
+
+            <div>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">Aceptro los terminios y condiciones</label>
+            </div>
+
+            <div class="button">
+                <button type="submit">Registrarse</button>
+                <button type="reset">Limpiar</button>
+            </div>
+        </form>
+
+    </section>
+</main>
+
+<footer>
+    <p>Copyright Nébula 2025.</p>
+</footer>
+
+</body>
+</html>
