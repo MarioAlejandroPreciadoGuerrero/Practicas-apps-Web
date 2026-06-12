@@ -43,7 +43,7 @@ public class MainControl {
 
     }
 
-    @PostMapping("/autentication")
+    @PostMapping("/autenticacion")
     public String autenticacion(@RequestParam ("email") String email, @RequestParam("password") String password) {
         if (usuarioService.existeUsuario(email)) {
             return  "redirect:/index";

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nébula Music - Registro</title>
-    <link rel="stylesheet" href="../static/styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
@@ -53,7 +53,7 @@
 
             <div class="button">
                 <label>Genero</label>
-                <div>
+                <div class = "radio-group" >
                     <input type="radio" id="rad_femenino" name="rad_genero" value="femenino" required>
                     <label for="rad_femenino">Femenino</label>
                     <input type="radio" id="rad_masculino" name="rad_genero" value="masculino">
@@ -89,8 +89,8 @@
             </div>
 
             <div class="button">
-                <button type="submit">Registrarse</button>
-                <button type="reset">Limpiar</button>
+                <button type="submit" class = "btn-primary">Registrarse</button>
+                <button type="reset" class = "btn-secondary">Limpiar</button>
             </div>
         </form>
 
